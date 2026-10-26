@@ -15,5 +15,3 @@ I'm using this engine to build Arcanex Online, a persistent world where players 
 At **Neuron X**, I launched Esper, a Shopify AI agent for natural-language data querying and ingestion. At **Zoomforth**, I built enterprise APIs and integrations, brought analytics ETL in-house to halve costs, and handled production incidents and recovery. Earlier, I built backend systems in Go and led work on accounting and CRM platforms.
 
 I'm particularly interested in distributed systems, concurrency, performance, and how AI-assisted development changes the way we build reliable software.
-
-[Arcanex](https://arcanex.online/investors/) · [LinkedIn](https://www.linkedin.com/in/johan-naslund/)
