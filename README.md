@@ -4,9 +4,11 @@ I'm a full-stack engineer and systems architect with 14+ years of experience bui
 
 ## What I'm building
 
-I'm building [Arcanex](https://arcanex.online/investors/), a Rust multiplayer game engine that handles reconciliation so game developers don't have to. When inputs arrive late or out of order, the engine replays affected history, retracts outdated results, and propagates corrections through dependent computations.
+I'm building [Arcanex](https://arcanex.online/investors/), a Rust multiplayer game engine that handles reconciliation so game developers don't have to. When inputs arrive late or out of order, the engine replays what happened and updates any later results affected by the change, keeping server processes and clients in sync.
 
-On top of its foundations, I built a modular server runtime combining reactive processing with event streaming between server processes and clients. Each process automatically subscribes to the history it needs through channel-based permissions and maintains its own in-memory view. I'm now bringing these systems together into a playable alpha of Arcanex Online.
+On top of its foundations, I built a modular server runtime combining reactive processing with event streaming between server processes and clients. Each process automatically subscribes to the history it needs through channel-based permissions and maintains its own in-memory view.
+
+I'm using this engine to build Arcanex Online, a persistent world where players can build towns, form communities, and leave a lasting mark. The broader goal is to make worlds like this practical for small teams to create and run. I'm currently bringing the engine and game together into a playable alpha.
 
 ## Earlier work
 
