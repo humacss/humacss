@@ -1,17 +1,22 @@
-# Hi, I'm Johan Näslund
+# Hi, I’m Johan Näslund
 
-I'm a full-stack engineer and systems architect with 14+ years of experience building and operating software. My work spans enterprise APIs, data pipelines, AI agents, and Rust systems infrastructure. I've been a founding CTO, engineering manager, and lead engineer, and I stay hands-on with the code.
+I’m a software engineer and systems architect. I’ve built products and systems from scratch for businesses large and small, working across a range of languages and frameworks. These days, I’m building a multiplayer game and sharing the tools I build here on GitHub. You can learn more about me and read my writing at [humacss.dev](https://humacss.dev/).
 
-## What I'm building
+## Open Source
 
-I'm building [Arcanex](https://arcanex.online/investors/), a Rust multiplayer game engine that handles reconciliation so game developers don't have to. Its state management is built on [ConTime](https://github.com/humacss/contime), an open-source Rust library I created to reconstruct deterministic state from event history, even when events arrive late or out of order.
+I’ve built a few tools that I share as open source. Here’s what each one does.
+
+- [ConTime](https://github.com/humacss/contime) helps systems process events over time, including when they arrive late or out of order.
+- [Minbin](https://github.com/humacss/minbin) is a minimal binary serialization library for exchanging data across platforms.
+- [TraitStub](https://github.com/humacss/traitstub) generates lightweight Rust trait stubs so you can test real code with controlled dependencies.
+- [ContentID](https://github.com/humacss/contentid) lets independent programs generate the same ID from the same content without a central service.
+
+You can see ConTime and Minbin in action in the shared asteroid game on [my website](https://humacss.dev/).
+
+## What I’m Building
+
+I’m building [Arcanex](https://arcanex.online/investors/), a Rust multiplayer game engine that handles reconciliation so game developers don’t have to. Its state management is built on [ConTime](https://github.com/humacss/contime), an open-source Rust library I created to reconstruct deterministic state from event history, even when events arrive late or out of order.
 
 On top of ConTime, I built a modular server runtime combining reactive processing with event streaming between server processes and clients. When earlier state changes, the runtime removes outdated results and updates the systems that used them. Each process automatically subscribes to the history it needs through channel-based permissions and maintains its own in-memory view.
 
-I'm using this engine to build Arcanex Online, a persistent world where players can build towns, form communities, and leave a lasting mark. The broader goal is to make worlds like this practical for small teams to create and run. I'm currently bringing the engine and game together into a playable alpha.
-
-## Earlier work
-
-At **Neuron X**, I launched Esper, a Shopify AI agent for natural-language data querying and ingestion. At **Zoomforth**, I built enterprise APIs and integrations, brought analytics ETL in-house to halve costs, and handled production incidents and recovery. Earlier, I built backend systems in Go and led work on accounting and CRM platforms.
-
-I'm particularly interested in distributed systems, concurrency, performance, and how AI-assisted development changes the way we build reliable software.
+I’m using this engine to build [Arcanex Online](https://arcanex.online/), a persistent world where players can build towns, form communities, and leave a lasting mark. The broader goal is to make worlds like this practical for small teams to create and run. I’m currently bringing the engine and game together into a playable alpha.
